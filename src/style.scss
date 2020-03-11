@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    border-color: transparent;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #269edc;
+    color: white;
+  
+    &.purchase {
+      background-color: #ff9800;
+      color: white;
+    }
+  }
+  
+  .banner {
+    height: 55px;
+    background: #f8f9fa;
+  
+    > h1.title {
+      margin: 0 auto;
+      width: 1270px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 55px;
+    }
+  }
+  
+  .contents {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 15px;
+  
+    > .title {
+      margin-bottom: 25px;
+    }
+  }
+  
+  .contents.purchased {
+    .container {
+      margin: 0 auto;
+      width: 500px;
+      text-align: center;
+      height: 100px;
+      padding: 20px;
+      background: #f1f1f1;
+      font-size: 25px;
+  
+      .title {
+        margin-bottom: 15px;
+        color: #585858;
+      }
+    }
+  }
+  
+  .products {
+    display: inline-block;
+    width: 1000px;
+  }
+  
+  .product {
+    display: inline-block;
+    height: 350px;
+    width: 280px;
+    text-align: center;
+    border: gainsboro solid 1px;
+    border-radius: 5px;
+    margin: 0 15px 20px 20px;
+    position: relative;
+  
+    .background {
+      background: gainsboro;
+      height: 180px;
+      padding-top: 25px;
+  
+      > img {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  
+    > .name {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  
+    > .actions {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      left: 0;
+    }
+  }
+  
+  .cart {
+    display: inline-block;
+    position: absolute; 
+    width: 250px;
+  
+    .title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  
+    .seperator {
+      border-bottom: lightgrey solid 1px;
+    }
+  
+    .block {
+      margin: 10px 0;
+  
+      .value {
+        float: right;
+      }
+    }
+  
+    .actions > .purchase {
+      width: 100%;
+  
+      &:disabled {
+        background: lightgrey;
+      }
+    }
+  }
